@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  practice_iOS
 //
-//  Created by Rohith Gudavalli on 27/11/22.
+//  Created by Kranthi Kumar on 27/11/22.
 //
 
 import UIKit
