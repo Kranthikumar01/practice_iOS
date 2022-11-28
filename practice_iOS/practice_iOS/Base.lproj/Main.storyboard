@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="puL-6l-6vP">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -18,22 +18,62 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJB-RN-zzS">
-                                <rect key="frame" x="114.33333333333333" y="408.66666666666669" width="164.66666666666669" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="login with Barcode"/>
+                                <rect key="frame" x="87.333333333333329" y="368.33333333333331" width="218.33333333333337" height="45.333333333333314"/>
+                                <color key="backgroundColor" red="1" green="0.94363184571848546" blue="0.51913866713374013" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="login with Barcode">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="barCodeBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eHO-fo-YWw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oF-gO-drl">
+                                <rect key="frame" x="80.333333333333329" y="438.33333333333331" width="232.66666666666669" height="45.333333333333314"/>
+                                <color key="backgroundColor" red="0.8972055436940749" green="0.80263729632844649" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="login with Biometric">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="bioMetricBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QPt-yo-KmJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="FJB-RN-zzS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-35" id="Efk-HO-PJc"/>
                             <constraint firstItem="FJB-RN-zzS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aAY-Yu-0aD"/>
-                            <constraint firstItem="FJB-RN-zzS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hve-tb-AL6"/>
+                            <constraint firstItem="0oF-gO-drl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bDS-eB-OsG"/>
+                            <constraint firstItem="0oF-gO-drl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="35" id="exK-NG-y1L"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="I78-y0-N7U"/>
+                    <connections>
+                        <outlet property="barCodeScanButton" destination="FJB-RN-zzS" id="JiJ-bm-99g"/>
+                        <outlet property="biometricButton" destination="0oF-gO-drl" id="A72-gE-RTU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21" y="4"/>
+            <point key="canvasLocation" x="-390" y="-45"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YrJ-7i-Ufv">
+            <objects>
+                <navigationController id="puL-6l-6vP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y4K-3R-Sed">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KSM-QJ-Z1d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1in-L6-ObB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1239" y="-45"/>
         </scene>
     </scenes>
     <resources>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CF90B5B2933B72E00523CE5 /* scannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF90B5A2933B72E00523CE5 /* scannerView.swift */; };
+		1CF90B5D2933B74B00523CE5 /* scannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CF90B5C2933B74B00523CE5 /* scannerView.xib */; };
 		2566D94E2933869F00260769 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2566D94D2933869F00260769 /* AppDelegate.swift */; };
 		2566D9502933869F00260769 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2566D94F2933869F00260769 /* SceneDelegate.swift */; };
 		2566D9522933869F00260769 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2566D9512933869F00260769 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CF90B5A2933B72E00523CE5 /* scannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scannerView.swift; sourceTree = "<group>"; };
+		1CF90B5C2933B74B00523CE5 /* scannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = scannerView.xib; sourceTree = "<group>"; };
 		2566D94A2933869F00260769 /* practice_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practice_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2566D94D2933869F00260769 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2566D94F2933869F00260769 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				2566D94D2933869F00260769 /* AppDelegate.swift */,
 				2566D94F2933869F00260769 /* SceneDelegate.swift */,
 				2566D9512933869F00260769 /* ViewController.swift */,
+				1CF90B5A2933B72E00523CE5 /* scannerView.swift */,
+				1CF90B5C2933B74B00523CE5 /* scannerView.xib */,
 				2566D9532933869F00260769 /* Main.storyboard */,
 				2566D959293386A200260769 /* Assets.xcassets */,
 				2566D95B293386A200260769 /* LaunchScreen.storyboard */,
@@ -235,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2566D95D293386A200260769 /* LaunchScreen.storyboard in Resources */,
+				1CF90B5D2933B74B00523CE5 /* scannerView.xib in Resources */,
 				2566D95A293386A200260769 /* Assets.xcassets in Resources */,
 				2566D9552933869F00260769 /* Main.storyboard in Resources */,
 			);
@@ -265,6 +272,7 @@
 				2566D94E2933869F00260769 /* AppDelegate.swift in Sources */,
 				2566D9582933869F00260769 /* practice_iOS.xcdatamodeld in Sources */,
 				2566D9502933869F00260769 /* SceneDelegate.swift in Sources */,
+				1CF90B5B2933B72E00523CE5 /* scannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
