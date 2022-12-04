@@ -21,7 +21,5 @@
 			</array>
 		</dict>
 	</dict>
-	<key>NSCameraUsageDescription</key>
-	<string>allow to scan the QR, Bar code</string>
 </dict>
 </plist>
