@@ -14,34 +14,14 @@
         <view contentMode="scaleToFill" restorationIdentifier="scannerView" id="IbZ-4f-wcf" customClass="scannerView" customModule="practice_iOS" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fP7-aL-JGu">
-                    <rect key="frame" x="50" y="150" width="293" height="320"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="320" id="gTK-gu-nh0"/>
-                    </constraints>
-                </view>
-            </subviews>
             <viewLayoutGuide key="safeArea" id="69f-wX-ihn"/>
             <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-            <constraints>
-                <constraint firstItem="fP7-aL-JGu" firstAttribute="top" secondItem="69f-wX-ihn" secondAttribute="top" constant="150" id="7km-73-BVz"/>
-                <constraint firstItem="69f-wX-ihn" firstAttribute="trailing" secondItem="fP7-aL-JGu" secondAttribute="trailing" constant="50" id="HjW-kA-7at"/>
-                <constraint firstItem="fP7-aL-JGu" firstAttribute="leading" secondItem="69f-wX-ihn" secondAttribute="leading" constant="50" id="SeJ-h5-XHU"/>
-            </constraints>
-            <connections>
-                <outlet property="scanArea" destination="fP7-aL-JGu" id="fGr-5l-E4i"/>
-            </connections>
             <point key="canvasLocation" x="-20" y="-356"/>
         </view>
     </objects>
     <resources>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
